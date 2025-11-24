@@ -1,5 +1,5 @@
 Biblioteca Universitaria - Gruppo-26
-Descrizione del progetto
+
 L’applicazione sviluppata da Gruppo-26 ha come obiettivo la gestione di una biblioteca universitaria, permettendo la registrazione e la consultazione dei dati relativi a libri, utenti e prestiti tramite una interfaccia grafica intuitiva. Il sistema facilita le operazioni di inserimento, modifica, ricerca, prestito e restituzione dei volumi e include strumenti per il monitoraggio delle scadenze e dei ritardi.​
 
 Funzionalità principali
