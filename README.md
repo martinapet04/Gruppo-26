@@ -1,55 +1,48 @@
-Biblioteca Universitaria - Gruppo-26
+# Biblioteca Maven – Gruppo 26
 
-L’applicazione sviluppata dal Gruppo-26 ha come obiettivo la gestione di una biblioteca universitaria, permettendo la registrazione e la consultazione dei dati relativi a libri, utenti e prestiti tramite una interfaccia grafica intuitiva. Il sistema facilita le operazioni di inserimento, modifica, ricerca, prestito e restituzione dei volumi e include strumenti per il monitoraggio delle scadenze e dei ritardi.​
+Progetto per il corso di **Ingegneria del Software** (A.A. 2024/2025).  
+L’obiettivo è sviluppare un sistema software per la gestione dei prestiti di una biblioteca universitaria, con interfaccia grafica JavaFX e build automatizzata tramite Maven.
 
-Funzionalità principali
-Registrazione, modifica e cancellazione dei dati dei libri (titolo, autori, anno, ISBN/codice, copie disponibili).​
+---
 
-Visualizzazione della lista dei libri ordinata per titolo e ricerca per autore, titolo o codice identificativo.​
+## 👨‍👩‍👧‍👦 Membri del gruppo 26
 
-Gestione dei dati degli utenti (nome, cognome, matricola, e-mail istituzionale, libri in prestito, data restituzione).​
+| Matricola  | Cognome   | Nome    | E‑mail istituzionale                    | Ruolo principale        |
+|-----------:|-----------|---------|-----------------------------------------|-------------------------|
+| 612710198  | Petrini   | Martina | m.petrini9@studenti.unisa.it           | Portavoce / Developer  |
+| 612708102  | Lanzara   | Valeria | v.lanza10@studenti.unisa.it            | Developer              |
+| 612710133  | Murano    | Andrea  | a.murano15@studenti.unisa.it           | Developer              |
+| 612709613  | Migliaccio| Luca    | l.migliaccio4@studenti.unisa.it        | Developer              |
 
-Visualizzazione e ricerca della lista utenti per cognome/nome o matricola.​
+---
 
-Gestione completa dei prestiti e delle restituzioni, con vincoli specifici (max 3 libri in prestito per utente, prestito solo se disponibili, evidenziazione ritardi).​
+## 📚 Descrizione del progetto
 
-Esportazione e salvataggio archivio completo su file.​
+L’applicazione gestisce:
 
-Installazione
-Il progetto è configurato tramite Maven e può essere compilato e eseguito da terminale:
+- Il **catalogo dei libri** (titolo, autori, anno, ISBN, copie disponibili).
+- Le **schede degli utenti** (nome, cognome, matricola, e‑mail).
+- I **prestiti attivi** con data prevista di restituzione e segnalazione di eventuali ritardi.
 
-text
-git clone https://github.com/martinapet04/Gruppo-26.git
-cd Gruppo-26
-mvn compile
-mvn package
-Per avviare il programma:
+Tutte le operazioni vengono eseguite tramite una **GUI JavaFX**, pensata per l’operatore di biblioteca, e i dati sono salvati su file locali per garantire persistenza tra un’esecuzione e l’altra.
 
-text
-java -jar target/<nome-file>.jar
-Struttura del repository
-La struttura segue gli standard Maven:
+Funzionalità principali:
 
-text
-src/
-  main/
-    java/
-      com/
-        mycompany/
-          mavenproject/
-  test/
-    java/
-      ...
-Il file pom.xml contiene le dipendenze e i plugin necessari per compilazione, testing e packaging.​
+- Gestione libri: inserimento, modifica, cancellazione, ricerca e visualizzazione ordinata.
+- Gestione utenti: registrazione, modifica, cancellazione, ricerca e visualizzazione ordinata.
+- Gestione prestiti: apertura/chiusura prestiti, limite di 3 prestiti per utente, controllo copie disponibili, elenco prestiti e ritardi evidenziati.
+- Salvataggio e caricamento automatico dell’intero archivio (libri, utenti, prestiti).
 
-Testing
-I test automatici sono sviluppati con JUnit.
+---
 
-Lanciare i test tramite:
+## 🛠 Requisiti software
 
-text
-mvn test
-Documentazione
-Sono inclusi requisiti, casi d’uso, diagrammi delle classi e di sequenza, e descrizioni delle scelte progettuali all’interno delle cartelle dedicate nel repository.
+- **Java 8+** (Zulu o OpenJDK)
+- **Maven 3.x**
+- **JUnit 5** (per i test automatizzati)
 
-La documentazione delle interfacce pubbliche delle classi viene generata tramite Doxygen.
+---
+
+## 🚀 Come avviare il progetto
+
+1. Clonare il repository:
