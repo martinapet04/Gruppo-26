@@ -46,3 +46,11 @@ Funzionalità principali:
 ## 🚀 Come avviare il progetto
 
 1. Clonare il repository:
+   https://github.com/martinapet04/Gruppo-26.git
+
+2. Compilare il progetto ed eseguire i test:
+3. Avviare l’applicazione (profilo JavaFX standard, se configurato nel `pom.xml`):
+ 
+
+   
+   
