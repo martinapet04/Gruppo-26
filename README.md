@@ -9,10 +9,10 @@ L’obiettivo è sviluppare un sistema software per la gestione dei prestiti di 
 
 | Matricola  | Cognome   | Nome    | E‑mail istituzionale                    | Ruolo principale        |
 |-----------:|-----------|---------|-----------------------------------------|-------------------------|
-| 612710198  | Petrini   | Martina | m.petrini9@studenti.unisa.it           | Portavoce / Developer  |
-| 612708102  | Lanzara   | Valeria | v.lanza10@studenti.unisa.it            | Developer              |
-| 612710133  | Murano    | Andrea  | a.murano15@studenti.unisa.it           | Developer              |
-| 612709613  | Migliaccio| Luca    | l.migliaccio4@studenti.unisa.it        | Developer              |
+| 0612710198  | Petrini   | Martina | m.petrini9@studenti.unisa.it           | Portavoce / Developer  |
+| 0612708102  | Lanzara   | Valeria | v.lanza10@studenti.unisa.it            | Developer              |
+| 0612710133  | Murano    | Andrea  | a.murano15@studenti.unisa.it           | Developer              |
+| 0612709613  | Migliaccio| Luca    | l.migliaccio4@studenti.unisa.it        | Developer              |
 
 ---
 
