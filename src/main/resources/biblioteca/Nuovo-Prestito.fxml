@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="biblioteca.NuovoPrestitoController">
+
+    <top>
+        <Label text="NUOVO PRESTITO: Seleziona Utente e Libro"
+               BorderPane.alignment="CENTER"
+               style="-fx-background-color: #3b74a8; -fx-text-fill: white; -fx-padding: 10;">
+            <font>
+                <Font name="System Bold" size="18"/>
+            </font>
+        </Label>
+    </top>
+
+    <center>
+        <HBox spacing="10" BorderPane.alignment="CENTER">
+            <children>
+
+                
+                <VBox spacing="5">
+                    <children>
+                        <Label text="1. Seleziona Studente"/>
+                        <TableView fx:id="tblUtenti" prefWidth="350" prefHeight="300">
+                            <columns>
+                                <TableColumn fx:id="colMatricola" text="Mat." prefWidth="90"/>
+                                <TableColumn fx:id="colCognome"  text="Cognome" prefWidth="120"/>
+                                <TableColumn fx:id="colNome"     text="Nome"    prefWidth="120"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+                
+                <VBox spacing="5">
+                    <children>
+                        <Label text="2. Seleziona Libro"/>
+                        <TableView fx:id="tblLibri" prefWidth="350" prefHeight="300">
+                            <columns>
+                                <TableColumn fx:id="colTitolo" text="Titolo" prefWidth="220"/>
+                                <TableColumn fx:id="colIsbn"   text="ISBN"   prefWidth="130"/>
+                                <TableColumn fx:id="colDisp"   text="Disp."  prefWidth="60"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </HBox>
+    </center>
+
+    <bottom>
+        <VBox spacing="5" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- Data scadenza -->
+                <HBox spacing="5" alignment="CENTER">
+                    <children>
+                        <Label text="Data scadenza:"/>
+                        <DatePicker fx:id="dpScadenza"/>
+                    </children>
+                </HBox>
+
+                <!-- Bottoni -->
+                <HBox spacing="10" alignment="CENTER">
+                    <children>
+                        <Button text="Annulla"
+                                onAction="#handleAnnulla"
+                                style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+                        <Button text="Conferma Prestito"
+                                onAction="#handleConferma"
+                                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"/>
+                    </children>
+                    <padding>
+                        <Insets top="5" right="10" bottom="10" left="10"/>
+                    </padding>
+                </HBox>
+
+            </children>
+        </VBox>
+    </bottom>
+
+</BorderPane>

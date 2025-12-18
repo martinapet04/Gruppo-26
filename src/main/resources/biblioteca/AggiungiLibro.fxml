@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.AggiungiLibroController">
+   <children>
+      <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="📚 AGGIUNGI NUOVO LIBRO" />
+
+      <VBox spacing="15.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Titolo:" />
+                  <TextField fx:id="txtTitolo" prefHeight="35.0" prefWidth="350.0" promptText="Inserisci titolo del libro" />
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Autori:" />
+                  <TextField fx:id="txtAutori" prefHeight="35.0" prefWidth="350.0" promptText="Inserisci autori" />
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Anno:" />
+                  <TextField fx:id="txtAnno" prefHeight="35.0" prefWidth="350.0" promptText="es. 2023" />
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="ISBN:" />
+                  <TextField fx:id="txtIsbn" prefHeight="35.0" prefWidth="350.0" promptText="es. 978-1-284-22899-1" />
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Disponibili:" />
+                  <TextField fx:id="txtDisponibili" prefHeight="35.0" prefWidth="350.0" promptText="es. 5" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <Label fx:id="lblErrore" style="-fx-text-fill: red; -fx-font-weight: bold; -fx-font-size: 14px;" text="ERRORE" visible="false" />
+
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Button onAction="#handleSalvaLibro" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="💾 SALVA" />
+            <Button onAction="#handleAnnullaLibro" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="❌ ANNULLA" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+</VBox>

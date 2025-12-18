@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['gestionebiblioteca_0',['GestioneBiblioteca',['../classbiblioteca_1_1_gestione_biblioteca.html#a802c47f5818b11996659de5857f08134',1,'biblioteca::GestioneBiblioteca']]],
+  ['getanno_1',['getAnno',['../classbiblioteca_1_1_book.html#aaebbeabc7c28175209dd0045b4999722',1,'biblioteca::Book']]],
+  ['getautore_2',['getAutore',['../classbiblioteca_1_1_book.html#ad88b14a589b894875780fdea472259e1',1,'biblioteca::Book']]],
+  ['getautori_3',['getAutori',['../classbiblioteca_1_1_book.html#a3d22714312f4f10cd5e9350322f3a4c7',1,'biblioteca::Book']]],
+  ['getcognome_4',['getCognome',['../classbiblioteca_1_1_utente.html#a287ae17aacd22df1ee2e3a7467895020',1,'biblioteca::Utente']]],
+  ['getcopiedisponibili_5',['getCopieDisponibili',['../classbiblioteca_1_1_book.html#a399776e6e5b6c0ad1ebd6be50af83b72',1,'biblioteca::Book']]],
+  ['getdisponibili_6',['getDisponibili',['../classbiblioteca_1_1_book.html#a966f7e139993525e8e30e126a22ac598',1,'biblioteca::Book']]],
+  ['getemail_7',['getEmail',['../classbiblioteca_1_1_utente.html#aec107c4d7d58e9064a8f110bead28839',1,'biblioteca::Utente']]],
+  ['getisbn_8',['getIsbn',['../classbiblioteca_1_1_book.html#a2c607e72d714052d3878a1317fccf022',1,'biblioteca::Book']]],
+  ['getlibri_9',['getLibri',['../classbiblioteca_1_1_gestione_biblioteca.html#a5546c6dfebf3b1bd8754520db74d3186',1,'biblioteca::GestioneBiblioteca']]],
+  ['getlibro_10',['getLibro',['../classbiblioteca_1_1_prestito.html#ae679013e140e477cad7299be4fb03cf6',1,'biblioteca::Prestito']]],
+  ['getmatricola_11',['getMatricola',['../classbiblioteca_1_1_utente.html#ae02aac3bdbc89b19e89dc70422b5d35e',1,'biblioteca::Utente']]],
+  ['getnome_12',['getNome',['../classbiblioteca_1_1_utente.html#a0f3fa421f0c85eb4ec85df430b7bae39',1,'biblioteca::Utente']]],
+  ['getprestiti_13',['getPrestiti',['../classbiblioteca_1_1_gestione_biblioteca.html#a96a00485325244f9d5725e15c1179f72',1,'biblioteca::GestioneBiblioteca']]],
+  ['getscadenza_14',['getScadenza',['../classbiblioteca_1_1_prestito.html#abd00c0d68cc4902aeff711596eb04211',1,'biblioteca::Prestito']]],
+  ['getscadenzadate_15',['getScadenzaDate',['../classbiblioteca_1_1_prestito.html#a30abe8f182e6c917d320c4cf772edd4a',1,'biblioteca::Prestito']]],
+  ['getstatovista_16',['getStatoVista',['../classbiblioteca_1_1_prestito.html#a65d65a5751e117061d93c7e43516c5d7',1,'biblioteca::Prestito']]],
+  ['gettitolo_17',['getTitolo',['../classbiblioteca_1_1_book.html#a6d152ca00871a7c5d0b8e8a7852739b1',1,'biblioteca::Book']]],
+  ['getutente_18',['getUtente',['../classbiblioteca_1_1_prestito.html#a97929a99a5c46e8c79eefa1d1b9172aa',1,'biblioteca::Prestito']]],
+  ['getutenti_19',['getUtenti',['../classbiblioteca_1_1_gestione_biblioteca.html#a291e2181dc75939fe7ffa1a1f5350bf2',1,'biblioteca::GestioneBiblioteca']]]
+];

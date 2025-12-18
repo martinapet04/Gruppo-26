@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="biblioteca.GestionePrestitiController">
+
+    <top>
+        <VBox spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="GESTIONE PRESTITI"
+                       style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <children>
+                        <Label text="Cerca:"/>
+                        <TextField fx:id="txtFiltroPrestiti"
+                                   promptText="Filtra per libro o utente..."
+                                   HBox.hgrow="ALWAYS"/>
+                        <Button text="Cerca" onAction="#handleCercaPrestiti"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tblPrestiti" prefHeight="400.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="colLibro"      text="LIBRO"    prefWidth="250.0"/>
+                <TableColumn fx:id="colUtente"     text="UTENTE"   prefWidth="200.0"/>
+                <TableColumn fx:id="colDataInizio" text="SCADENZA" prefWidth="120.0"/>
+                <TableColumn fx:id="colDataFine"   text="STATO"    prefWidth="120.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10.0" alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Button text="+ NUOVO PRESTITO"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"
+                        onAction="#handleNuovoPrestito"/>
+
+                <Button text="RESTITUISCI / ELIMINA"
+                        style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-font-weight: bold;"
+                        onAction="#handleEliminaPrestito"/>
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </HBox>
+    </bottom>
+
+</BorderPane>

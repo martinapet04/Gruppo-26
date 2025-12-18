@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="biblioteca.GestioneLibriController">
+    <children>
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"
+               text="📚 CATALOGO LIBRI" />
+
+        
+        <HBox alignment="CENTER_LEFT" spacing="15.0">
+            <children>
+                <Label text="Cerca per:" />
+                <ComboBox fx:id="cmbCercaPer" prefWidth="120.0" />
+                <TextField fx:id="txtFiltro" promptText="Filtra libri..." prefWidth="250.0" />
+            </children>
+        </HBox>
+
+        
+        <TableView fx:id="tblLibri" prefHeight="400.0">
+            <columns>
+                <TableColumn fx:id="colTitolo" prefWidth="250.0" text="TITOLO" />
+                <TableColumn fx:id="colAutori" prefWidth="200.0" text="AUTORI" />
+                <TableColumn fx:id="colAnno"   prefWidth="80.0"  text="ANNO" />
+                <TableColumn fx:id="colIsbn"   prefWidth="150.0" text="ISBN" />
+                <TableColumn fx:id="colDisp"   prefWidth="100.0" text="DISPONIBILI" />
+            </columns>
+        </TableView>
+
+        
+        <HBox alignment="CENTER" spacing="15.0">
+            <children>
+                <Button fx:id="btnAggiungi" onAction="#handleAggiungiLibro"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;"
+                        text="➕ AGGIUNGI LIBRO" />
+                <Button fx:id="btnModifica" onAction="#handleModificaLibro"
+                        style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;"
+                        text="✏️ MODIFICA" />
+                <Button fx:id="btnElimina" onAction="#handleEliminaLibro"
+                        style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;"
+                        text="🗑️ ELIMINA" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

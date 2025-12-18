@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="biblioteca.GestioneUtentiController">
+
+    <top>
+        <VBox spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="GESTIONE UTENTI"
+                       style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+                <HBox spacing="10.0" alignment="CENTER_LEFT">
+                    <children>
+                        <Label text="Cerca per:"/>
+                        <ComboBox fx:id="cmbFiltroUtenti" prefWidth="140.0"/>
+                        <TextField fx:id="txtFiltroUtenti" promptText="Filtra utenti..." HBox.hgrow="ALWAYS"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tblUtenti" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="colNome" text="NOME" prefWidth="150.0"/>
+                <TableColumn fx:id="colCognome" text="COGNOME" prefWidth="150.0"/>
+                <TableColumn fx:id="colMatricola" text="MATRICOLA" prefWidth="150.0"/>
+                <TableColumn fx:id="colEmail" text="EMAIL" prefWidth="250.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10.0" alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Button text="+ NUOVO UTENTE"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"
+                        onAction="#handleNuovoUtente"/>
+
+                <Button text="✏️ MODIFICA UTENTE"
+                        style="-fx-background-color: #FFC107; -fx-text-fill: black; -fx-font-weight: bold;"
+                        onAction="#handleModificaUtente"/>
+
+                <Button text="🗑️ ELIMINA"
+                        style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-font-weight: bold;"
+                        onAction="#handleEliminaUtente"/>
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </HBox>
+    </bottom>
+
+</BorderPane>
